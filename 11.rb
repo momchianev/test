@@ -3,5 +3,6 @@ n = 0
 while n <= 999
     n = n + 1
     print n
-    print "\kur"
-end
+
+    print "\nkur"
+end 
