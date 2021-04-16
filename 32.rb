@@ -24,4 +24,4 @@ while n != 0
     n = n.to_i
 end
 print max 
-print min 
+print min
