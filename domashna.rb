@@ -1,4 +1,7 @@
 ##
+require_relative './helpers'
+
+
 arr = [2,6,12,8,18,20]
 len = arr.length
 min = arr[0]

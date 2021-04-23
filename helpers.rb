@@ -91,4 +91,44 @@ def findminandmaxandmakeminus arr
     return sum 
 end
 
+#function that finds the sum in array
+def namerisuminarray arr 
+    len = arr.length
+    sum = 0
+    sum = sum.to_i
+    broqch = 0
+    
+    while broqch <= len - 1
+        sum = sum + arr[broqch].to_i
+        broqch = broqch + 1
+    end
+    
+    return sum 
+end
 
+#function that reverse array 
+def reversearray arr
+    len = arr.length
+    idx = len - 1  
+    arr2 = []
+    while idx >= 0 
+        arr2.push arr[idx] 
+        idx = idx - 1
+    end
+    return arr2
+end
+
+#find if number exists in array
+
+def existsinarray arr, number
+    len = arr.length
+    idx = 0
+    while idx <= len - 1
+        if number == arr[idx]
+            return true
+        end
+        idx = idx + 1
+        
+    end
+    return false 
+end
