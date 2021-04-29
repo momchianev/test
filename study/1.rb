@@ -1,7 +1,7 @@
 # имаме число <Н>. Програмата връща сум= 1 до Н
 
 broqch = 0
-n = gets  
+n = gets 
 sum = 0
 
 while broqch <= n.to_i 

@@ -132,3 +132,45 @@ def existsinarray arr, number
     end
     return false 
 end
+
+#merge matrix 
+def mergematrices arr, arr2 
+    arr3 = []
+    for num in arr do 
+        arr3.push num 
+    end
+
+    for num in arr2 do
+        arr3.push num
+    end
+
+    return arr3 
+end
+
+#multiple matrices 
+
+arr = [1,2,3,4,5]
+arr2 = [2,3,4,5,6] 
+
+def multiplematrices arr, arr2
+    idx = 0 
+    sum = 0 
+    while idx < arr.length
+        if arr.length != arr2.length 
+            print "razlichna duljina"
+            break
+        end 
+        sum = sum + arr[idx] * arr2[idx]
+        idx = idx + 1 
+    end
+    return  sum 
+end
+
+#get column in matrices 
+def getColumn arr, col
+    arr2 = [] 
+    for row in arr do
+        arr2.push row[col]
+    end 
+    return arr2
+end 
